@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page FCC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Roboto:wght@100;400&display=swap" rel="stylesheet" />
+  </head>
+  <body id="home">
+    <div class="container" id="header">
+      <nav class="menu" id="nav-bar">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Japanese Restaurant</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header">
+        <div class="hero">
+          <img src="" alt="" id="header-img" />
+          <h2 class="heading">Japanese Restaurant</h2>
+          <p class="sub-heading">All Japanese Food</p>
+        </div>
+        <div class="features features-1">
+          <h4 class="price">IDR 150K</h4>
+          <p class="item">Ramen</p>
+        </div>
+        <div class="features features-2">
+          <h4 class="price">IDR 100k</h4>
+          <p class="item">Sushi</p>
+        </div>
+      </div>
+
+      <section class="services" id="services">
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Makanan 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aspernatur exercitationem eum iure minus esse!</p>
+        </div>
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Makanan 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aspernatur exercitationem eum iure minus esse!</p>
+        </div>
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Makanan 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aspernatur exercitationem eum iure minus esse!</p>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://source.unsplash.com/random/201x201" alt="" />
+        <img src="https://source.unsplash.com/random/202x202" alt="" />
+        <img src="https://source.unsplash.com/random/203x203" alt="" />
+        <img src="https://source.unsplash.com/random/204x204" alt="" />
+        <img src="https://source.unsplash.com/random/205x205" alt="" />
+        <img src="https://source.unsplash.com/random/206x206" alt="" />
+        <img src="https://source.unsplash.com/random/207x207" alt="" />
+        <img src="https://source.unsplash.com/random/208x208" alt="" />
+        <img src="https://source.unsplash.com/random/209x209" alt="" />
+        <img src="https://source.unsplash.com/random/2010x2010" alt="" />
+      </section>
+
+      <section class="contact">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="email" name="email" id="email" placeholder="Masukkan email anda.." />
+          <input type="submit" id="submit" />
+        </form>
+      </section>
+
+      <section class="video">
+        <iframe
+          style="z-index: -1"
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/watch?v=UjAZKizxvq4"
+          title="Youtube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("nav ul");
+      const span = document.querySelectorAll(".menu-toggle span");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+        span.forEach((s) => {
+          s.classList.toggle("slide");
+        });
+      });
+    </script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
